@@ -1,0 +1,103 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function room(id) { return get(/databases/$(database)/documents/rooms/$(id)).data; }
+    function member(id) {
+      return signedIn() && request.auth.uid in [room(id).members.shazily, room(id).members.anike];
+    }
+    function isRole(id, role) {
+      return member(id) && role in ['shazily', 'anike'] && room(id).members[role] == request.auth.uid;
+    }
+    function myRole(id) { return room(id).members.shazily == request.auth.uid ? 'shazily' : 'anike'; }
+    function otherRole(role) { return role == 'shazily' ? 'anike' : 'shazily'; }
+    function answerExists(id, round, role) {
+      return exists(/databases/$(database)/documents/rooms/$(id)/rounds/$(round)/answers/$(role));
+    }
+    match /rooms/{id} {
+      allow get: if member(id) || (signedIn() && (resource.data.members.shazily == null || resource.data.members.anike == null));
+      allow list, delete: if false;
+      allow create: if signedIn() && id.size() >= 24
+        && request.resource.data.keys().hasOnly(['members', 'createdAt'])
+        && request.resource.data.members.keys().hasOnly(['shazily', 'anike'])
+        && ((request.resource.data.members.shazily == request.auth.uid && request.resource.data.members.anike == null)
+          || (request.resource.data.members.anike == request.auth.uid && request.resource.data.members.shazily == null));
+      allow update: if signedIn()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['members'])
+        && request.resource.data.members.keys().hasOnly(['shazily', 'anike'])
+        && ((resource.data.members.shazily == null && request.resource.data.members.shazily == request.auth.uid
+              && request.resource.data.members.anike == resource.data.members.anike)
+          || (resource.data.members.anike == null && request.resource.data.members.anike == request.auth.uid
+              && request.resource.data.members.shazily == resource.data.members.shazily));
+      match /session/{docId} {
+        allow read: if member(id);
+        allow create, update: if docId == 'state' && member(id)
+          && request.resource.data.keys().hasOnly(['current', 'ready', 'done', 'seen', 'slide', 'objections', 'quoteRound', 'replyRound', 'storyRound', 'softRound', 'playback', 'started'])
+          && request.resource.data.current in ['', 'opening', 'quotes', 'traps', 'replies', 'stories', 'soft']
+          && request.resource.data.slide is int && request.resource.data.slide >= 0 && request.resource.data.slide < 15
+          && request.resource.data.quoteRound is int && request.resource.data.quoteRound >= 0 && request.resource.data.quoteRound <= 8
+          && request.resource.data.replyRound is int && request.resource.data.replyRound >= 0 && request.resource.data.replyRound <= 4
+          && request.resource.data.storyRound is int && request.resource.data.storyRound >= 0 && request.resource.data.storyRound <= 4
+          && request.resource.data.softRound is int && request.resource.data.softRound >= 0 && request.resource.data.softRound <= 4
+          && request.resource.data.ready is map && request.resource.data.ready.keys().hasOnly(['shazily', 'anike'])
+          && request.resource.data.ready.shazily is bool && request.resource.data.ready.anike is bool
+          && (!exists(/databases/$(database)/documents/rooms/$(id)/session/state)
+            || request.resource.data.ready.diff(resource.data.ready).affectedKeys().hasOnly([myRole(id)]));
+        allow delete: if false;
+      }
+      match /rounds/{roundId} {
+        allow read: if member(id);
+        allow create, update: if member(id)
+          && request.resource.data.keys().hasOnly(['locked'])
+          && request.resource.data.locked.keys().hasOnly(['shazily', 'anike'])
+          && request.resource.data.locked[myRole(id)] == true
+          && existsAfter(/databases/$(database)/documents/rooms/$(id)/rounds/$(roundId)/answers/$(myRole(id)))
+          && (!exists(/databases/$(database)/documents/rooms/$(id)/rounds/$(roundId))
+            ? request.resource.data.locked.keys().hasOnly([myRole(id)])
+            : request.resource.data.locked.diff(resource.data.locked).affectedKeys().hasOnly([myRole(id)]));
+        allow delete: if false;
+        match /answers/{role} {
+          allow read: if member(id) && (isRole(id, role) || answerExists(id, roundId, myRole(id)) || roundId == 'trap-' + myRole(id));
+          allow create: if isRole(id, role)
+            && request.resource.data.keys().hasOnly(['value', 'kind', 'createdAt'])
+            && request.resource.data.value is string && request.resource.data.value.size() > 0 && request.resource.data.value.size() <= 1800
+            && request.resource.data.kind in ['quote', 'reply', 'story', 'soft', 'jury', 'trap']
+            && (request.resource.data.kind != 'quote' || request.resource.data.value in ['shazily', 'anike'])
+            && (request.resource.data.kind != 'jury' || request.resource.data.value in ['shazily', 'anike', 'both']);
+          allow update, delete: if false;
+        }
+        match /secrets/{role} {
+          allow read: if member(id) && (isRole(id, role) || answerExists(id, roundId, myRole(id)));
+          allow create: if isRole(id, role) && roundId == 'trap-' + role
+            && request.resource.data.keys().hasOnly(['value'])
+            && request.resource.data.value is string && request.resource.data.value.size() > 0 && request.resource.data.value.size() <= 1000;
+          allow update, delete: if false;
+        }
+      }
+      match /questions/{role} {
+        allow read: if member(id);
+        allow create: if isRole(id, role)
+          && request.resource.data.keys().hasOnly(['question', 'prediction', 'finished', 'result'])
+          && request.resource.data.question is string && request.resource.data.question.size() > 0 && request.resource.data.question.size() <= 1000
+          && request.resource.data.prediction in ['remember', 'forget']
+          && request.resource.data.finished == false && request.resource.data.result == ''
+          && existsAfter(/databases/$(database)/documents/rooms/$(id)/rounds/$('trap-' + role)/secrets/$(role));
+        allow update: if isRole(id, role)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['finished', 'result'])
+          && request.resource.data.finished == true && request.resource.data.result in ['remember', 'forget']
+          && answerExists(id, 'trap-' + role, otherRole(role));
+        allow delete: if false;
+      }
+      match /messages/{messageId} {
+        allow read: if member(id);
+        allow create: if member(id)
+          && request.resource.data.keys().hasOnly(['by', 'text', 'context', 'createdAt'])
+          && isRole(id, request.resource.data.by)
+          && request.resource.data.text is string && request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 1000
+          && request.resource.data.context is string && request.resource.data.context.size() <= 120
+          && request.resource.data.createdAt == request.time;
+        allow update, delete: if false;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "wahala-game-night",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:rules": "firebase emulators:exec --only firestore --project demo-wahala \"node --test test/firestore.test.cjs\"",
+    "build": "esbuild src/firebase-room.js --bundle --format=esm --outfile=dist/firebase-room.js --minify"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.1",
+    "esbuild": "^0.25.12",
+    "firebase": "^11.10.0",
+    "firebase-tools": "^14.10.1",
+    "playwright": "^1.64.0"
+  }
+}
