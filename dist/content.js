@@ -1,21 +1,21 @@
 window.NIGHT_CONTENT = {
   "slides": [
     {
-      "tag": "THE PEOPLE v. THESE TWO",
-      "title": "Two defendants.\nOne chat export.",
-      "verdict": "The accused have fifteen scenes to defend themselves. Their objections will be recorded.",
-      "body": "Tonight the court is reviewing one Her Majesty and one man who occasionally behaves like Merlin. The evidence has dates. Both defendants are advised against “I never said that.” Their chat has already said otherwise.",
+      "tag": "JUST YOU TWO",
+      "title": "Your chat is funny. 😹",
+      "verdict": "Small small wahala. Plenty love.",
+      "body": "You two have said some funny things. Let’s look back. Tap Next whenever you want.",
       "receipt": [
         "Shazily + Anike",
         "2 April to 10 October 2026"
       ],
-      "foot": "15 scenes. 40 seconds each. Both may object. The receipts will remain."
+      "foot": "Your chat from 2 April to 10 October 2026."
     },
     {
-      "tag": "01 / WHO IS DOING ALL THE TALKING?",
-      "title": "Both of them.\nNeither can deny it.",
-      "verdict": "Joint Directors of Nonstop Gist",
-      "body": "Before either defendant claims to carry the conversation, the text-message split is almost even. This relationship has two active typing departments. Neither office appears to observe normal closing hours.",
+      "tag": "WHO TALKS MORE?",
+      "title": "Both of you. Of course.",
+      "verdict": "Nobody here is quiet.",
+      "body": "Anike sent 9,058 texts. Shazily sent 8,847. Both of you like gist. 😹",
       "stat": "51% / 49%",
       "bars": [
         9058,
@@ -29,13 +29,13 @@ window.NIGHT_CONTENT = {
         "Anike: 9,058 text messages",
         "Shazily: 8,847 text messages"
       ],
-      "foot": "Share of the 17,905 retained text messages. Rounded to whole percentages."
+      "foot": "Out of 17,905 text messages: Anike 51%, Shazily 49%."
     },
     {
-      "tag": "02 / THE LAUGHTER DEPARTMENT",
-      "title": "Anike brought\nthe laugh track.",
-      "verdict": "Chief Laughing Officer: Anike",
-      "body": "Shazily says something with his full chest. Anike arrives with 😹😹😹, and suddenly the man has become a comedy special. His serious announcements appear to be premium entertainment.",
+      "tag": "WHO LAUGHS MORE?",
+      "title": "Anike is already laughing. 😹",
+      "verdict": "Shazily, are you the joke?",
+      "body": "Shazily tries to be serious. Anike brings 😹😹😹. Oga, try again.",
       "stat": "63%",
       "bars": [
         1576,
@@ -49,13 +49,13 @@ window.NIGHT_CONTENT = {
         "Anike: 1,576 laughing-emoji messages",
         "Shazily: 946 laughing-emoji messages"
       ],
-      "foot": "Share of messages containing 😂, 😹, or 🤣. Within each person’s texts: 17.4% and 10.7% respectively."
+      "foot": "Anike sent 1,576 texts with 😂, 😹 or 🤣. Shazily sent 946. Anike sent 63% of those texts."
     },
     {
-      "tag": "03 / NO FURTHER QUESTIONS, YOUR HONOUR",
-      "title": "Shazily’s girlfriend\nhas follow-ups.",
-      "verdict": "Commissioner of Cross-Examination: Anike",
-      "body": "Shazily thought this was a casual conversation. Anike opened an inquiry. What? Why? How? When? The witness has been instructed to answer before sending another sticker. He is not being released yet.",
+      "tag": "SO MANY QUESTIONS",
+      "title": "Anike has one more question.",
+      "verdict": "And another. And another.",
+      "body": "You thought the gist was over? Anike still wants to know what, why and how. 😹",
       "stat": "85%",
       "bars": [
         1371,
@@ -69,13 +69,13 @@ window.NIGHT_CONTENT = {
         "Anike: 1,371 messages with a question mark",
         "Shazily: 248 messages with a question mark"
       ],
-      "foot": "Share of 1,619 question-mark messages. A punctuation count, not proof of who is more curious."
+      "foot": "Anike sent 1,371 texts with ?. Shazily sent 248. Anike sent 85% of those texts."
     },
     {
-      "tag": "04 / THE DECLARATION ECONOMY",
-      "title": "His love declarations\nhave a renewal plan.",
-      "verdict": "Permanent Secretary of “I Love You”: Shazily",
-      "body": "One declaration was not enough. Two were not enough. Shazily has a recurring subscription. Anike can reply “Rest jor” and he returns with another romantic press release. The court supports this particular habit.",
+      "tag": "LOVE YOU AGAIN",
+      "title": "Shazily will say it again. ❤️",
+      "verdict": "Rest jor? He loves you still.",
+      "body": "He said “I love you” yesterday. He will say it today. Anike, just collect your love.",
       "stat": "81%",
       "bars": [
         14,
@@ -89,13 +89,13 @@ window.NIGHT_CONTENT = {
         "“I love you Shukroh”",
         "“I love you Ejeh mi😚”"
       ],
-      "foot": "58 of 72 messages containing the exact phrase “I love you” came from Shazily. This measures wording, not how much either person loves."
+      "foot": "Shazily sent 58 of the 72 texts with “I love you”. That is 81%. Words don’t measure love."
     },
     {
-      "tag": "05 / THE AYINKE INVESTIGATION",
-      "title": "Ayinke keeps getting\na guest appearance.",
-      "verdict": "Director of Manufactured Drama: Shazily",
-      "body": "A jealousy case was opened. Unfortunately for the prosecutor, most of the Ayinke mentions came from the prosecutor himself. Shazily brought the plot twist, announced the plot twist, then requested a reaction. The court has questions.",
+      "tag": "SMALL SMALL DRAMA",
+      "title": "Who brought Ayinke into this? 🌚",
+      "verdict": "Shazily, explain yourself.",
+      "body": "Most of the Ayinke mentions came from Shazily. Oga, you started this gist yourself. 😹",
       "stat": "58%",
       "bars": [
         22,
@@ -109,24 +109,24 @@ window.NIGHT_CONTENT = {
         "“I’m Anike not Ayinke”",
         "“I know 😂”"
       ],
-      "foot": "30 of 52 retained text messages mentioning Ayinke came from Shazily. This does not measure real jealousy."
+      "foot": "Shazily sent 30 of 52 texts mentioning Ayinke. That is 58%. Just chat counts."
     },
     {
-      "tag": "06 / HER RESPONSE TO THE ALLEGED COMPETITION",
-      "title": "Side chicks?\nAnike said side hens.",
-      "verdict": "Chairwoman of Strategic Reclassification: Anike",
-      "body": "Shazily brought alleged competition to the meeting. Anike changed the job title before the meeting ended. A chat cannot establish who feels more jealous. It can establish that her naming department takes no prisoners.",
+      "tag": "SIDE HENS?",
+      "title": "Anike changed their name. 😹",
+      "verdict": "Side chicks became side hens.",
+      "body": "Shazily said side chicks. Anike said side hens. Please, who taught this woman?",
       "receipt": [
         "Shazily: “Wetin go do my sidechick🥹😭”",
         "Anike: “They will be fine. As long as they remain side hens”"
       ],
-      "foot": "20 April 2026. Banter evidence, not an allegation about anybody’s behaviour."
+      "foot": "From your chat on 20 April 2026. Who is more jealous? You two decide below."
     },
     {
-      "tag": "07 / WHO WILL BEG FIRST?",
-      "title": "Their apology league\nis basically a draw.",
-      "verdict": "Joint Winners of “Oya Mabinu”",
-      "body": "After all the dragging, both offices still know where “sorry” is located on the keyboard. Anike has 71 matching messages. Shazily has 69. A two-message lead does not warrant a victory parade.",
+      "tag": "SORRY NOW",
+      "title": "Both of you know how to say sorry.",
+      "verdict": "Okay, come here. ❤️",
+      "body": "Anike: 71 texts with “sorry”. Shazily: 69. Two more sorrys won’t win you a trophy. 😹",
       "stat": "71 / 69",
       "bars": [
         71,
@@ -140,37 +140,37 @@ window.NIGHT_CONTENT = {
         "Anike: 71 messages containing “sorry”",
         "Shazily: 69 messages containing “sorry”"
       ],
-      "foot": "Word matches include different contexts. They are not a count of wrongdoing or accountability."
+      "foot": "These are texts with the word “sorry”, not a count of fights."
     },
     {
-      "tag": "08 / THE SCHOLAR HAS ENTERED",
-      "title": "Anike called herself\nolodo. Objection.",
-      "verdict": "Scholar in Scrubs: Nurse Olaiya",
-      "body": "Anike studies, survives Anatomy, discusses clinicals, then attempts to call herself olodo. Her own boyfriend has already testified that she reads more than him. Her application to escape the scholar title has been denied.",
+      "tag": "BOOKS AND BOOKS",
+      "title": "Anike, stop calling yourself olodo.",
+      "verdict": "You read. We have proof.",
+      "body": "You said you read more than they even asked. Then you called yourself olodo? Come off it. 😹",
       "receipt": [
         "Shazily: “You read more than me naw”",
         "Anike: “I read more than what was asked sef”",
         "Anike: “Especially Anatomy”"
       ],
-      "foot": "24 August and 2 April 2026. A playful title supported by their own words, not an academic ranking."
+      "foot": "Your words from 24 August and 2 April 2026."
     },
     {
-      "tag": "09 / THE CELEBRITY AND HIS MANAGEMENT",
-      "title": "1,000 likes.\nOne proud manager.",
-      "verdict": "Rising Star: Shazily. Chief Hype Officer: Anike.",
-      "body": "Shazily announced 1k likes and requested that his cranium burst. Anike congratulated him like management overseeing a promising client. Earlier, his win came with school-fee support. Her response was “Proud mum moment.” His PR department is emotionally invested.",
+      "tag": "YOUR HYPE PERSON",
+      "title": "1,000 likes? Anike is proud. 🥹",
+      "verdict": "Your biggest fan is right here.",
+      "body": "Shazily got a win. Anike said “Proud mum moment”. Oga, don’t forget your fan when you blow.",
       "receipt": [
         "Shazily: “1k likes on instagram!!”",
         "Anike: “Awwww🤭 You’re getting there🥺”",
         "Anike: “Proud mum moment 🤭”"
       ],
-      "foot": "17 and 18 May 2026. These are milestones reported in the chat, not independently verified popularity statistics."
+      "foot": "Your chat from 17 and 18 May 2026. Who is the star? Vote below."
     },
     {
-      "tag": "10 / INTERNATIONAL ROMANCE HAS A CURFEW",
-      "title": "He offered the world.\nShe chose her bed.",
-      "verdict": "Minister of Shutdown: Anike",
-      "body": "Shazily proposed worldwide travel and a love story in Jannah. A serious announcement. A big vision. Her Majesty checked the time and announced dreamland. His international romance apparently has opening hours.",
+      "tag": "SLEEP FIRST",
+      "title": "The world can wait. Anike is sleepy.",
+      "verdict": "Love you. Goodnight. 😹",
+      "body": "He offered the whole world. She wanted her bed. Romance is sweet, but sleep is sweet too.",
       "stat": "72%",
       "bars": [
         13,
@@ -184,53 +184,53 @@ window.NIGHT_CONTENT = {
         "“And we would continue the love story in Jannah too🥹”",
         "“Okay sir but tonight I need to go to dream land first😹😹”"
       ],
-      "foot": "13 of 18 messages matching “go sleep”, “go and sleep”, “go to sleep”, or “go to bed” came from Anike. The quoted exchange is from 17 August."
+      "foot": "Anike sent 13 of 18 texts with “go sleep”, “go and sleep”, “go to sleep” or “go to bed”. That is 72%."
     },
     {
-      "tag": "11 / DEMOCRACY HAS BEEN SUSPENDED",
-      "title": "Her referendum:\nyes or yes.",
-      "verdict": "Chief Chocolate Negotiator: Anike",
-      "body": "Anike’s chocolate referendum had two options. Both were yes. No opposition party. No recount. No escape route. Shazily received a purchase instruction with decorative punctuation.",
+      "tag": "YES OR YES?",
+      "title": "Anike wants chocolate. 🌚",
+      "verdict": "No is not on the menu.",
+      "body": "She gave you two options. Both were yes. Shazily, just buy the chocolate.",
       "receipt": [
         "“I want chocolate”",
         "“Yes or yes?🌚”"
       ],
-      "foot": "11 June 2026. Choose an answer below. The court wishes Shazily the best."
+      "foot": "Your chat from 11 June 2026."
     },
     {
-      "tag": "12 / THE FINAL QUARTER BELONGS TO YOU TWO",
-      "title": "Their final quarter\nis fully booked.",
-      "verdict": "Keeper of the Relationship Calendar: Anike",
-      "body": "Her birthday. Their talking anniversary. His birthday. Anike laid out the whole quarter like somebody scheduling a very affectionate product launch. This relationship has deadlines. Shazily has been advised to check his calendar.",
+      "tag": "DON’T FORGET",
+      "title": "Your calendar is full of you two.",
+      "verdict": "Oga, set a reminder.",
+      "body": "October: her birthday. November: a year of talking. December: his birthday. Plenty reasons to spoil each other.",
       "receipt": [
         "“October - My birthday”",
         "“November - makes it officially a year since we started talking properly”",
         "“December - your birthday”"
       ],
-      "foot": "20 August 2026. The export starts in April, but her message remembers an earlier chapter."
+      "foot": "Anike listed these dates in your chat on 20 August 2026."
     },
     {
-      "tag": "13 / THE ROYAL TITLES COMMITTEE",
-      "title": "“A queen was born.”\nRejected by Anike.",
-      "verdict": "Her Majesty, Self-Certified Gentle Woman",
-      "body": "Shazily tried the normal birthday caption. Anike said “Trash it sehh.” Then she corrected the title to Her Majesty. Earlier, when asked who said she had been gentle, she supplied one witness: “I, Shukroh.” Independent audit pending. 😹",
+      "tag": "HER MAJESTY",
+      "title": "A queen? She said try again. 😌",
+      "verdict": "Get the title right, please.",
+      "body": "Shazily wrote “a queen was born”. Anike said “Trash it”. Her Majesty has spoken. 😹",
       "receipt": [
         "“Trash it sehh😹😹”",
         "“Her majesty*”",
         "“I, Shukroh”"
       ],
-      "foot": "8 October and 1 August 2026. Even Anike’s birthday caption has an approval department."
+      "foot": "Your chat from 8 October and 1 August 2026. Who brings more wahala? Vote below."
     },
     {
-      "tag": "14 / ONE LAST VERDICT",
-      "title": "Their small small wahala\nhas a soft centre.",
-      "verdict": "Two Very Unserious People Who Mean the Soft Parts",
-      "body": "Under the titles, stickers, questions, and chocolate negotiations, these two celebrate each other’s wins. They check on food and rest. They pray for one another. Their chat contains plenty comedy, but its soft parts are sincere. Tonight becomes another memory they get to keep.",
+      "tag": "THE SWEET PART",
+      "title": "You two are cute. Annoying, but cute. ❤️",
+      "verdict": "Keep this energy.",
+      "body": "You tease each other. You cheer each other on. You pray for each other. Now go make another nice memory.",
       "receipt": [
         "“May this energy never die. May this spark never go. May this light not dim”",
         "“May Allah bless you for me, put so much Barakah in what you are doing and continue to make you our source of pride”"
       ],
-      "foot": "18 August and 27 May 2026. The hearing is over. Their game night is just starting."
+      "foot": "Your words from 18 August and 27 May 2026."
     }
   ],
   "quotes": [
@@ -295,24 +295,24 @@ window.NIGHT_CONTENT = {
   ],
   "stories": [
     [
-      "The outing began before the outing",
-      "On 15 June, the plan was Maryland. In between the questions about the cinema and the journey, Shazily said: “Let’s go together.”",
-      "What tiny detail from Maryland do you still remember?"
+      "Our Maryland day",
+      "We planned a trip to Maryland. You said, “Let’s go together.”",
+      "What funny thing do you remember from that day?"
     ],
     [
-      "A date, a phone, and a plan",
-      "On 29 September, Anike said she would be at Ozone by 4 and explained how to reach her. Ordinary logistics became part of a memory they kept.",
-      "What made you smile at Ozone?"
+      "Our Ozone date",
+      "We made plans to meet at Ozone.",
+      "What made you smile that day?"
     ],
     [
-      "The familiar place",
-      "On 2 April, their Unilag visit came up during an argument about who insulted whose Android. Even the phone joined their story.",
-      "What Unilag moment would you like to repeat?"
+      "That Unilag gist",
+      "Even the Android phone got dragged in this gist. 😹",
+      "Which part of our Unilag day would you do again?"
     ],
     [
-      "The message that landed",
-      "On 27 May, Shazily prayed for barakah in Anike’s work. She replied that it made her feel loved and emotional.",
-      "Which ordinary thing does the other person do that makes you feel loved?"
+      "You made me smile",
+      "That prayer for your work was sweet. ❤️",
+      "What small thing does your person do that makes you smile?"
     ]
   ],
   "method": {
@@ -321,7 +321,7 @@ window.NIGHT_CONTENT = {
       "anike": 9058,
       "shazily": 8847
     },
-    "definition": "One matching message counts once, regardless of repetitions inside it. Media-only, deleted, and system messages are excluded. Text accompanying media may remain. Exact word and punctuation matches can include quoted words or different contexts. Counts are observations about this export, not personality tests.",
+    "definition": "We counted text messages from this chat. A message counts once even if a word appears twice. We left out deleted messages, system messages and media with no text. These numbers are just for fun. They don’t tell us who loves more.",
     "matches": {
       "laughter": {
         "anike": 1576,
