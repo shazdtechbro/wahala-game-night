@@ -11,3 +11,5 @@
 .partner-wait{font-size:14px;color:var(--muted);padding:12px 0}.count-note{margin-top:22px;color:var(--muted);font-size:12px}.count-note summary{cursor:pointer}.slide{min-height:0}.slide h2{font-size:clamp(36px,5vw,64px)}.game-card .small{font-size:14px}.choices .choice{font-size:17px;padding:16px 24px}.hub-card:first-child{border-color:var(--lime)}#trap-form .choices{display:grid}#trap-form [data-suggestion]{text-align:left;border-radius:12px;white-space:normal}
 
 #chat-messages{min-height:0;overscroll-behavior:contain}.chat-delivery{display:block;font-size:10px;color:var(--muted);margin-top:5px}#chat-send-status{font-size:12px;color:var(--muted);margin:0}
+
+#how-to-play{margin-bottom:30px;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:15px 20px}#how-to-play summary{cursor:pointer;font-weight:700;color:var(--blue);font-size:15px}.play-guide{padding-top:20px;max-width:680px;font-size:14px}.play-guide h2{font-size:25px;margin-bottom:15px}.play-guide ol{padding-left:22px;margin-bottom:20px}.play-guide li{margin-bottom:10px}.play-guide p:last-child{margin-bottom:0}
